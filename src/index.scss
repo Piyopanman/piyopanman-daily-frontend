@@ -1,0 +1,277 @@
+$blue: #7ac0cc;
+$white:#eaf9fb; 
+$dark_blue:#008299; 
+$orange: #eea010;
+$black: #606060;
+
+html{
+  background-color: $blue;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  margin:0 auto;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+h1,p{
+  color: $black;
+}
+
+a{
+  text-decoration: none;
+}
+
+#root{
+  width: 100%;
+}
+
+// ヘッダー
+.header{
+  background-color: $dark_blue;
+  margin: 0px;
+  padding: 10px;
+  //width: 100%;
+  h1{
+    line-height: 100px;
+  }
+  a,h1{
+    display: inline-block;
+    color: $white;
+    &:hover{
+      color: #003d47;
+      transition: 0.5s;
+    } 
+  }
+  ul{
+    font-size: 30px;
+    float: right;
+    color: $white;
+    margin: 5px 10px;
+    line-height: 70px;
+  }
+  li{
+    margin: 10px 20px;
+    float: left;
+    list-style: none;
+  }
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+//top
+.top{
+  margin: 30px;
+  text-align: center;
+  h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 18px;
+  }
+  img{
+    width: 50%;
+  }
+}
+
+// main
+.main-container{
+  //background-color: #f0f8ff;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: inline-block;
+  width: 70%;
+  margin: 10px;
+  padding: 10px ;
+}
+
+// 一覧ページ
+
+.contents-container{
+  display: inline-block;
+  width: 75%;
+  padding: 20px 30px;
+}
+
+
+  .daily-content{
+    display: inline-block;
+    width: 20%;
+    margin: 5px 7px;
+    padding: 8px;
+    background-color: $white;
+    text-align: center;
+    box-shadow: 5px 5px $dark_blue;
+
+    h1{
+      font-size: 20px;
+      &:hover{
+        color: #313131;
+        transition: 0.5s;
+      }
+    }
+    .evaluation{
+      width: 70%;
+      text-align: center;
+    }
+  }
+ 
+ //カテゴリーリスト
+  
+.category-list{
+  display: inline-block;
+  background-color: $white;
+  margin: 20px 10px;
+  //margin-bottom: 50%;
+  position: fixed;
+  padding: 20px 0px;
+  line-height: 30px;
+  border: 4px solid $orange ;
+  border-radius: 10px;
+  vertical-align: middle;
+  ul{
+    text-align: center;
+  }
+  li{
+    margin: 5px 0;
+    list-style: none;
+  }
+  a{
+    color: $orange;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    &:hover{
+      background-color: $orange;
+      transition: 0.5s;
+      color: #eaf9fb;
+    }
+
+  }
+}
+
+@mixin detail-cat-container {
+  background-color: $white;
+  display: inline-block;
+  margin: 20px 20px;
+  padding: 30px 30px;
+  width: 60%;
+  border-radius: 10px;
+}
+
+@mixin markdown {
+  color: $black;
+  ul{
+    margin-left: 3%;
+    line-height: 1.7;
+  }
+}
+
+//詳細表示
+.detail-container{
+  @include detail-cat-container();
+  .detail-date{
+    color: $dark_blue;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .detail-title{
+   margin: 40px 0 20px 0;
+  }
+}
+
+.detail-content{
+  @include markdown();
+}
+
+
+//カテゴリ別表示
+.categoryView-container{
+  @include detail-cat-container();
+  .category-title{
+    color: $dark_blue;
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  .category-date{
+    margin: 40px 0 20px 0;
+  }
+}
+
+.category-content{
+  @include markdown();
+}
+
+
+
+
+@media(max-width: 1000px){
+
+  .header{
+    height: 100%;
+  }
+
+  @mixin phone {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+  }
+
+  .contents-container{
+    @include phone();
+    text-align: center;
+  }
+
+  .daily-content{
+    width: 30%;
+  }
+
+  .category-list{
+    display: block;
+    position: relative;
+  }
+
+
+  .categoryView-container{
+    @include phone();
+    margin-top: 50px;
+  }
+
+  .category-content{
+    margin-left: 15px;
+  }
+
+  .detail-container{
+    @include phone();
+    margin-top: 10px;
+  }
+
+  .detail-content{
+    margin-left: 15px;
+  }
+
+  .header{
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .header ul{
+    background-color: $dark_blue;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+}
