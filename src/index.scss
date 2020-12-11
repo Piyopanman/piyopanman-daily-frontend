@@ -42,9 +42,11 @@ a{
   background-color: $dark_blue;
   margin: 0px;
   padding: 10px;
+  height: 100%;
   //width: 100%;
   h1{
     line-height: 100px;
+    margin: 0 4%;
   }
   a,h1{
     display: inline-block;
@@ -90,22 +92,29 @@ a{
   }
 }
 
-// main
 .main-container{
   //background-color: #f0f8ff;
   margin: 0 auto;
   padding: 30px 0;
-  display: inline-block;
+  //display: inline-block;
   width: 70%;
   margin: 10px;
   padding: 10px ;
 }
 
+//main
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
 // 一覧ページ
 
 .contents-container{
   display: inline-block;
-  width: 75%;
+  width: 64%;
   padding: 20px 30px;
 }
 
@@ -133,13 +142,12 @@ a{
   }
  
  //カテゴリーリスト
-  
 .category-list{
-  display: inline-block;
+  display: block;
   background-color: $white;
-  margin: 20px 10px;
-  //margin-bottom: 50%;
-  position: fixed;
+  margin: 1%;
+  width: 25%;
+  height: 230px;
   padding: 20px 0px;
   line-height: 30px;
   border: 4px solid $orange ;
@@ -167,12 +175,13 @@ a{
 }
 
 @mixin detail-cat-container {
+  width: 64%;
   background-color: $white;
-  display: inline-block;
-  margin: 20px 20px;
+  display:block;
   padding: 30px 30px;
-  width: 60%;
   border-radius: 10px;
+  margin: 1%;
+  margin-right: 0;
 }
 
 @mixin markdown {
@@ -185,6 +194,7 @@ a{
 
 //詳細表示
 .detail-container{
+  
   @include detail-cat-container();
   .detail-date{
     color: $dark_blue;
@@ -221,18 +231,22 @@ a{
 
 
 
-@media(max-width: 1000px){
+@media(max-width: 800px){
 
-  .header{
-    height: 100%;
-  }
 
   @mixin phone {
     display: block;
     margin: 0 auto;
-    padding: 0;
+    margin-top: 2%;
     width: 95%;
   }
+
+  .category-list{
+    display: inline-block;
+    width: 100%;
+    margin: 2%;
+    height: 220px;
+  }  
 
   .contents-container{
     @include phone();
@@ -251,33 +265,39 @@ a{
 
   .categoryView-container{
     @include phone();
-    margin-top: 50px;
+    padding: 1%;
   }
 
   .category-content{
-    margin-left: 15px;
+    margin-left: 4%;
   }
 
   .detail-container{
     @include phone();
-    margin-top: 10px;
+    padding: 1%;
   }
 
   .detail-content{
-    margin-left: 15px;
+    margin-left: 4%;
   }
 
   .header{
+    height: 150px;
     width: 100%;
     padding: 0;
     margin: 0 auto;
+    line-height: 50px;
+    h1{
+      margin: 10px;
+      line-height: 50px;
+    }
+    ul{
+      line-height: 50px;
+      width: 100%;
+      padding: 0 10px;
+      margin: 0 auto;
+      }
   }
 
-  .header ul{
-    background-color: $dark_blue;
-    width: 100%;
-    padding: 0 10px;
-    margin: 0 auto;
-  }
 
 }

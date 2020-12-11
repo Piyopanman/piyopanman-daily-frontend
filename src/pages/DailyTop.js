@@ -28,7 +28,7 @@ export const DailyTop = () => {
     },[])
 
     return(
-        <div>
+        <div className="main">
             {
                 loading ?
                 <h1>loading...</h1>
