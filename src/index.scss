@@ -152,7 +152,8 @@ a{
   line-height: 30px;
   border: 4px solid $orange ;
   border-radius: 10px;
-  vertical-align: middle;
+  position: fixed;
+  right: 0;
   ul{
     text-align: center;
   }
