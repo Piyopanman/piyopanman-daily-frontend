@@ -32,8 +32,6 @@ export const DailyDetail = () => {
             throw new Error(e)
         })
     },[])
-
-    const test = '##見出し';
     
     return(
         <div className="main">

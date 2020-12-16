@@ -20,7 +20,7 @@ export const DailyContent = (daily) => {
 
     return(
         <div className="daily-content">
-            <Link to={`dailydetail/${daily.id}`}> <h1>{daily.date}</h1> </Link> 
+            <Link to={`daily/${daily.id}`}> <h1>{daily.date}</h1> </Link> 
             <img src={eva} alt='evaluation' className="evaluation" />
         </div>
     )

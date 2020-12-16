@@ -5,6 +5,7 @@ import { DailyTop } from './pages/DailyTop';
 import { Top } from './pages/Top';
 import { DailyDetail } from './pages/DailyDetail';
 import { CategoryView } from './pages/CategoryView';
+import { Portfolio } from './pages/Portfolio';
 
 class App extends Component{
 
@@ -17,8 +18,9 @@ class App extends Component{
             <Switch>
                 <Route exact path='/' component={Top} />
                 <Route exact path='/daily' component={DailyTop} />
-                <Route exact path='/dailydetail/:id' component={DailyDetail} />
-                <Route exact path='/:cat' component={CategoryView}/>
+                <Route exact path='/daily/:id' component={DailyDetail} />
+                <Route exact path='/daily/category/:cat' component={CategoryView}/>
+                <Route path='/portfolio' component={Portfolio}/>
                 <Route render={() => <h4>not found...</h4>} />
             </Switch>
           </div>

@@ -29,7 +29,7 @@ const toJson = async (res) => {
 //         method: 'GET',
 //         credentials: 'same-origin',
 //     })
-//     console.log(res)
+//     //console.log(res)
 //     return await toJson(res)
 // }
 
@@ -56,6 +56,6 @@ export const getCategory = async (cat) => {
         method: 'GET',
         credentials: 'same-origin',
     })
-    console.log(res)
+    //console.log(res)
     return await toJson(res)
 }
