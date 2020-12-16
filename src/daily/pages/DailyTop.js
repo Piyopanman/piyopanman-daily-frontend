@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { getDaily } from '../api/getDaily'
-
 import { DailyContent } from '../components/DailyContent'
 import { CategoryList } from '../components/CategoryList'
 

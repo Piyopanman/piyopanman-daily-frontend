@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import img1 from '../images/hiyoko_perfect.png';
-import img2 from '../images/hiyoko_good.png';
-import img3 from '../images/hiyoko_soso.png';
-import img4 from '../images/hiyoko_bad.png';
+import img1 from '../../images/hiyoko_perfect.png';
+import img2 from '../../images/hiyoko_good.png';
+import img3 from '../../images/hiyoko_soso.png';
+import img4 from '../../images/hiyoko_bad.png';
 
 export const DailyContent = (daily) => {
     let eva;

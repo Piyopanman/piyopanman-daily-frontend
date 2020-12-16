@@ -6,8 +6,8 @@ export const Header = () => {
         <div className='header'>
             <h1><Link to='/'>Top</Link></h1>
             <ul>
+                <li><Link to='/portfolio'>Portfolio</Link></li>
                 <li><Link to='/daily'>日報</Link></li>
-                <li><Link to='#'>Portfolio</Link></li>
             </ul>
         </div>
     )

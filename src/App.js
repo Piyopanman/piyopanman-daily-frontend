@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Header } from './components/Header';
-import { DailyTop } from './pages/DailyTop';
-import { Top } from './pages/Top';
-import { DailyDetail } from './pages/DailyDetail';
-import { CategoryView } from './pages/CategoryView';
-import { Portfolio } from './pages/Portfolio';
+import { Header } from './Header';
+import { Top } from './Top';
+import { DailyTop } from './daily/pages/DailyTop';
+import { CategoryView } from './daily/pages/CategoryView';
+import {DailyDetail} from './daily/pages/DailyDetail';
+import { Portfolio } from './portfolio/Portfolio';
 
 class App extends Component{
 
