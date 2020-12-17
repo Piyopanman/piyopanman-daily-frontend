@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { getDaily } from '../api/getDaily'
-
 import { DailyContent } from '../components/DailyContent'
 import { CategoryList } from '../components/CategoryList'
 
@@ -26,6 +25,9 @@ export const DailyTop = () => {
             throw new Error(e)
         })
     },[])
+
+    console.log("!!")
+    console.log(daily)
 
     return(
         <div className="main">
