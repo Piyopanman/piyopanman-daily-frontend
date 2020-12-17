@@ -18,7 +18,7 @@ export const Works = () => {
         },
         {
             key: 2,
-            title:'的当て？',
+            title:'的当て',
             img: processing,
             text:'大学の授業にて。クリックでボールを発射し的に当たると文字が出現します。',
             techs:'Processing',
@@ -27,7 +27,7 @@ export const Works = () => {
         },
         {
             key: 3,
-            title:'ひよこ?',
+            title:'ひよこ(?)',
             img: povray,
             text:'大学の授業にて。ウサギさん♡ネコちゃん♡キャワ♡みたいな感じだとつまらないよなと思いながら作ったらこうなりました。',
             techs:'POV-ray',
@@ -54,12 +54,12 @@ export const Works = () => {
 
     ]
 
-    console.log(works)
-
     return(
         <div>
-            <h1>works</h1>
+            <h1 className='pro-title'>works</h1>
+            <div  className='work-container'>
             {works.map(w => <Work {...w} />)}
+            </div>
         </div>
     );
 }

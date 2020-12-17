@@ -18,7 +18,7 @@ export const Histories = () => {
         },
         {
             date: '2020年7月',
-            event: '技育祭を視聴し同世代のアウトプットに衝撃を受ける(ターニングポイント)',
+            event: '技育祭を視聴し同世代のアウトプットに衝撃を受ける',
         },
         {
             date: '2020年9月',
@@ -32,18 +32,14 @@ export const Histories = () => {
             date: '2020年11月',
             event: 'ICPC 参加',
         },
-
-
-
-
-        
-
     ]
 
     return(
         <div>
-            <h1>history</h1>
+            <h1 className='pro-title'>History</h1>
+            <div className="history-container">
             {historeis.map(h => <History {...h} />)}
+            </div>
         </div>
     );
 
