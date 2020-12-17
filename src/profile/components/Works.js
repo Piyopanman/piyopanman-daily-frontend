@@ -56,7 +56,7 @@ export const Works = () => {
 
     return(
         <div>
-            <h1 className='pro-title'>works</h1>
+            <h1 className='pro-title'>Works</h1>
             <div  className='work-container'>
             {works.map(w => <Work {...w} />)}
             </div>

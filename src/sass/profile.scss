@@ -112,6 +112,9 @@ $black: #606060;
 }
 
 @media(max-width: 800px){
+    .profile-title{
+        font-size: 44px;
+    }
     .history-container{
         margin: 1%;
         width: 90%;

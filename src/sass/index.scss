@@ -88,7 +88,7 @@ a{
     font-size: 18px;
   }
   img{
-    width: 50%;
+    width: 70%;
   }
 }
 
@@ -131,8 +131,10 @@ a{
     h1{
       font-size: 20px;
       &:hover{
-        color: #313131;
-        transition: 0.5s;
+        border-radius: 20px;
+        color: white;
+        background-color: $black;
+        transition: 0.3s;
       }
     }
     .evaluation{
@@ -240,6 +242,12 @@ a{
     margin: 0 auto;
     margin-top: 2%;
     width: 95%;
+  }
+
+  .top{
+    h1{
+      font-size: 44px;
+    }
   }
 
   .category-list{
