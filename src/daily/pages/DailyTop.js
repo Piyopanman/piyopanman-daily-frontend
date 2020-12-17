@@ -26,6 +26,9 @@ export const DailyTop = () => {
         })
     },[])
 
+    console.log("!!")
+    console.log(daily)
+
     return(
         <div className="main">
             {
