@@ -1,9 +1,9 @@
 import React from 'react'
-import tsuda from '../../images/portfolio/TsudaRoomSearch.png'
-import processing from '../../images/portfolio/processing.gif'
-import povray from '../../images/portfolio/povray.png'  
-import repuSearch from '../../images/portfolio/TwitterReputationSearch.png'
-import nippo from '../../images/portfolio/daily.png'
+import tsuda from '../../images/profile/TsudaRoomSearch.png'
+import processing from '../../images/profile/processing.gif'
+import povray from '../../images/profile/povray.png'  
+import repuSearch from '../../images/profile/TwitterReputationSearch.png'
+import nippo from '../../images/profile/daily.png'
 import { Work } from './Work'
 
 export const Works = () => {

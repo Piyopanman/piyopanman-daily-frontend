@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const History = () => {
+export const Skills = () => {
     return(
         <div>
-            <h1>history</h1>
+            <h1>skills</h1>
+            
         </div>
     );
 }

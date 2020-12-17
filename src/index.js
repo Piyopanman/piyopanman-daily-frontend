@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './sass/index.scss';
-import './sass/portfolio.scss';
+import './sass/profile.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
