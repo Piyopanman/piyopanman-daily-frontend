@@ -33,6 +33,18 @@ a{
   text-decoration: none;
 }
 
+// a{
+//   text-decoration: none;
+//   color: $orange;
+//   padding: 1px 2px;
+//   &:hover{
+//     background-color: $orange;
+//     color: white;
+//     border-radius: 10%;
+//     transition: 0.3s;
+//   }
+// }
+
 #root{
   width: 100%;
 }
@@ -88,15 +100,13 @@ a{
     font-size: 18px;
   }
   img{
-    width: 70%;
+    width: 40%;
   }
 }
 
 .main-container{
-  //background-color: #f0f8ff;
   margin: 0 auto;
   padding: 30px 0;
-  //display: inline-block;
   width: 70%;
   margin: 10px;
   padding: 10px ;
@@ -193,6 +203,17 @@ a{
     margin-left: 3%;
     line-height: 1.7;
   }
+  a{
+  text-decoration: none;
+  color: $dark_blue;
+  padding: 1px 2px;
+  &:hover{
+    background-color: $dark_blue;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
 }
 
 //詳細表示
@@ -246,7 +267,10 @@ a{
 
   .top{
     h1{
-      font-size: 44px;
+      font-size: 35px;
+    }
+    img{
+      width: 50%;
     }
   }
 
