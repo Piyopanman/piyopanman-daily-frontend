@@ -1,5 +1,5 @@
 import React from 'react'
-import hiyoko from './images/hiyoko2.png'
+import hiyoko from './images/hiyoko.png'
 
 export const Top = () => {
     return(

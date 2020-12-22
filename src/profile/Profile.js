@@ -1,5 +1,5 @@
 import React from 'react'
-import hiyoko from '../images/hiyoko2.png'
+import hiyoko from '../images/hiyoko.png'
 import { Histories } from './components/Historeis'
 import { Skills } from './components/Skills'
 import { Works } from './components/Works'
