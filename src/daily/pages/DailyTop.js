@@ -14,7 +14,6 @@ export const DailyTop = () => {
     const[daily, setDaily] = useState(initialState);
     const[loading, setLoading] = useState(true);
 
-    //console.log(daily)
     useEffect(() => {
         getDaily()
         .then(d => {
@@ -25,8 +24,6 @@ export const DailyTop = () => {
             throw new Error(e)
         })
     },[])
-
-    //console.log(daily)
 
     return(
         <div className="main">

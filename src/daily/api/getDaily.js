@@ -12,7 +12,6 @@ const toJson = async (res) => {
 //         method: 'GET',
 //         credentials: 'same-origin',
 //     })
-//     //console.log(res)
 //     return await toJson(res);
 // }
 
@@ -29,7 +28,6 @@ const toJson = async (res) => {
 //         method: 'GET',
 //         credentials: 'same-origin',
 //     })
-//     // console.log(res)
 //     return await toJson(res)
 // }
 
@@ -37,7 +35,6 @@ const toJson = async (res) => {
 export const getDaily = async () =>{
     const res = await fetch('https://piyopanman.pythonanywhere.com/daily/', {
         method: 'GET',
-        credentials: 'same-origin',
     })
     //console.log(res)
     return await toJson(res);
@@ -46,7 +43,6 @@ export const getDaily = async () =>{
 export const getDailyDetail = async (id) => {
     const res = await fetch(`https://piyopanman.pythonanywhere.com/daily/${id}`, {
         method : 'GET',
-        credentials: 'same-origin',
     })
     return await toJson(res);
 }
@@ -54,7 +50,6 @@ export const getDailyDetail = async (id) => {
 export const getCategory = async (cat) => {
     const res = await fetch(`https://piyopanman.pythonanywhere.com/daily/${cat}`, {
         method: 'GET',
-        credentials: 'same-origin',
     })
     //console.log(res)
     return await toJson(res)
