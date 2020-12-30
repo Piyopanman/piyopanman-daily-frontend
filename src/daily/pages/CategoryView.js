@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from 'react'
+import React, {　useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 import { getCategory } from '../api/getDaily'
@@ -9,12 +9,6 @@ export const CategoryView = () => {
 
     const initialState = {
         date: '',
-        univ: '',
-        study: '',
-        other: '',
-        first_meet: '',
-        wanna_do: '',
-        summary: '',
     }
 
     const [category, setCategory] = useState(initialState)
@@ -48,9 +42,6 @@ export const CategoryView = () => {
     }else{
         title = "1日のまとめ";
     }
-
-
-
 
     return(
         <div className="main">
