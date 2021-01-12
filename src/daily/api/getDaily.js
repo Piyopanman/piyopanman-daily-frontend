@@ -7,50 +7,50 @@ const toJson = async (res) => {
     }
 }
 
-// export const getDaily = async () =>{
-//     const res = await fetch('http://127.0.0.1:8000/daily/', {
-//         method: 'GET',
-//         credentials: 'same-origin',
-//     })
-//     return await toJson(res);
-// }
-
-// export const getDailyDetail = async (id) => {
-//     const res = await fetch(`http://localhost:8000/daily/${id}`, {
-//         method : 'GET',
-//         credentials: 'same-origin',
-//     })
-//     return await toJson(res);
-// }
-
-// export const getCategory = async (cat) => {
-//     const res = await fetch(`http://localhost:8000/daily/${cat}`, {
-//         method: 'GET',
-//         credentials: 'same-origin',
-//     })
-//     return await toJson(res)
-// }
-
-
 export const getDaily = async () =>{
-    const res = await fetch('https://piyopanman.pythonanywhere.com/daily/', {
+    const res = await fetch('http://127.0.0.1:8000/daily/', {
         method: 'GET',
+        credentials: 'same-origin',
     })
-    //console.log(res)
     return await toJson(res);
 }
 
 export const getDailyDetail = async (id) => {
-    const res = await fetch(`https://piyopanman.pythonanywhere.com/daily/${id}`, {
+    const res = await fetch(`http://localhost:8000/daily/post/${id}`, {
         method : 'GET',
+        credentials: 'same-origin',
     })
     return await toJson(res);
 }
 
 export const getCategory = async (cat) => {
-    const res = await fetch(`https://piyopanman.pythonanywhere.com/daily/${cat}`, {
+    const res = await fetch(`http://localhost:8000/daily/post/${cat}`, {
         method: 'GET',
+        credentials: 'same-origin',
     })
-    //console.log(res)
     return await toJson(res)
 }
+
+
+// export const getDaily = async () =>{
+//     const res = await fetch('https://piyopanman.pythonanywhere.com/daily/', {
+//         method: 'GET',
+//     })
+//     //console.log(res)
+//     return await toJson(res);
+// }
+
+// export const getDailyDetail = async (id) => {
+//     const res = await fetch(`https://piyopanman.pythonanywhere.com/daily/post/${id}`, {
+//         method : 'GET',
+//     })
+//     return await toJson(res);
+// }
+
+// export const getCategory = async (cat) => {
+//     const res = await fetch(`https://piyopanman.pythonanywhere.com/daily/post/${cat}`, {
+//         method: 'GET',
+//     })
+//     //console.log(res)
+//     return await toJson(res)
+// }
