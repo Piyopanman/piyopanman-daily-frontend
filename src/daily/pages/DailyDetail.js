@@ -36,7 +36,7 @@ export const DailyDetail = () => {
     return(
         <div className="main">
             {loading ?
-                <h1>loading....</h1>
+                <div className="loader">loading....</div>
                 :
                 <div className="detail-container">
                     <h1 className="detail-date">{detail.date}</h1>
