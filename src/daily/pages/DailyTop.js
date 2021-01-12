@@ -29,7 +29,7 @@ export const DailyTop = () => {
         <div className="main">
             {
                 loading ?
-                <h1>loading...</h1>
+                <div className="loader">loading...</div>
                 :
                 <div className='contents-container'>
                 {daily.map( d => <DailyContent {...d}  /> )}
