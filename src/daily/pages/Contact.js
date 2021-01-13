@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react'
 import { useForm } from "react-hook-form"
 import { postContact } from "../api/postContact"
 
 export const Contact = () =>{
 
-    const { register, handleSubmit, watch, errors } = useForm();
-    const onSubmit = (data) => {
+    const { register, handleSubmit} = useForm();
+    const onSubmit = (data, e) => {
         console.log(data)
         postContact(data)
+        window.alert(data.name + "さん、お問い合わせありがとうございました！")
+        e.target.reset()
     }
 
     return(
@@ -24,7 +25,7 @@ export const Contact = () =>{
                 <input type="text" name="oshi" ref={register} placeholder="Java"/><br></br>
                 <h2>お問い合わせ内容（必須）</h2>
                 <textarea name="content" required={true} ref={register} placeholder="今日の晩ご飯のメニューは何ですか？"/><br></br>
-                <input type="submit" />
+                <input type="submit" value="送信！" />
             </form>
         </div>
     )
