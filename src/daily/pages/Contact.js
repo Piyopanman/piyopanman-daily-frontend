@@ -20,6 +20,8 @@ export const Contact = () =>{
                 <input type="text" name="email" ref={register} placeholder="hoge@gmail.com"/> <br></br>
                 <h2>Twitterアカウント（必須）</h2>
                 <input type="text" name="twitter" required={true} ref={register} placeholder="@hiyoko_coder"/><br></br>
+                <h2>推し（言語、アーティストなど分野問わず）</h2>
+                <input type="text" name="oshi" ref={register} placeholder="Java"/><br></br>
                 <h2>お問い合わせ内容（必須）</h2>
                 <textarea name="content" required={true} ref={register} placeholder="今日の晩ご飯のメニューは何ですか？"/><br></br>
                 <input type="submit" />
