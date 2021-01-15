@@ -7,7 +7,8 @@ export const Header = () => {
             <h1><Link to='/'>Top</Link></h1>
             <ul>
                 <li><Link to='/profile'>profile</Link></li>
-                <li><Link to='/daily'>日報</Link></li>
+                <li><Link to='/daily'>daily</Link></li>
+                <li><Link to='/contact'>contact</Link></li>
             </ul>
         </div>
     )
