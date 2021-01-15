@@ -12,7 +12,7 @@ export const Contact = () =>{
     }
 
     return(
-        <div>
+        <div className="contact-container">
             <h1>お問い合わせフォーム</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <h2>お名前（必須）</h2>
@@ -24,8 +24,8 @@ export const Contact = () =>{
                 <h2>推し（言語、アーティストなど分野問わず）</h2>
                 <input type="text" name="oshi" ref={register} placeholder="Java"/><br></br>
                 <h2>お問い合わせ内容（必須）</h2>
-                <textarea name="content" required={true} ref={register} placeholder="今日の晩ご飯のメニューは何ですか？"/><br></br>
-                <input type="submit" value="送信！" />
+                <textarea name="content" required={true} ref={register} placeholder="奢るので焼肉食べにいきませんか？"/><br></br>
+                <input id="submit-btn" type="submit" value="送信！" />
             </form>
         </div>
     )
