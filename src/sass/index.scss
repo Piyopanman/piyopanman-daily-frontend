@@ -351,7 +351,6 @@ a{
     width: 100%;
     padding: 0;
     margin: 0 auto;
-    line-height: 50px;
     h1{
       margin: 10px;
       line-height: 50px;
@@ -359,9 +358,12 @@ a{
     ul{
       line-height: 50px;
       width: 100%;
-      padding: 0 10px;
+      padding: 5px 10px;
       margin: 0 auto;
       }
+    li{
+      margin: 10px 20px 10px 15px;
+    }  
   }
 
 
