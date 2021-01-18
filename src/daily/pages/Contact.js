@@ -5,7 +5,7 @@ export const Contact = () =>{
 
     const { register, handleSubmit} = useForm();
     const onSubmit = (data, e) => {
-        console.log(data)
+        // console.log(data)
         postContact(data)
         window.alert(data.name + "さん、お問い合わせありがとうございました！")
         e.target.reset()
