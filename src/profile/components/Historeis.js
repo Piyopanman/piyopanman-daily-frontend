@@ -26,7 +26,7 @@ export const Histories = () => {
         },
         {
             date: '2020年10月',
-            event: 'オータムハッカソン 入賞',
+            event: 'オータムハッカソン 敢闘賞受賞',
         },
         {
             date: '2020年11月',
