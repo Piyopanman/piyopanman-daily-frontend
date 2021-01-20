@@ -10,9 +10,10 @@ $black: #606060;
     }
     padding: 2%;
     text-align: center;
-    img{
-        width: 35%;
-    }
+}
+
+.work-img{
+    width: 60%;
 }
 
 .profile-title{
@@ -25,9 +26,6 @@ $black: #606060;
     margin-top: 8%;
 }
 
-.work-img{
-    width: 200px;
-}
 
 .history-container{
     background-color: $white;
@@ -55,7 +53,7 @@ $black: #606060;
 
 @mixin item {
     background-color: $white;
-    width: 25%;
+    width: 40%;
     margin: 0 auto;
     margin: 1%;
     padding:2% 1% ;
@@ -89,7 +87,7 @@ $black: #606060;
     @include skill-work-container();
     .work-item{
         @include item();
-        height: 400px;
+        height: 440px;
         a{
             display: block;
             font-size: 25px;
@@ -103,7 +101,7 @@ $black: #606060;
             }
         }
         .work-text{
-            margin: 5% 0;
+            margin: 5% 3%;
         }
         .work-tech{
             color: $orange;
@@ -112,9 +110,12 @@ $black: #606060;
     }
 }
 
-@media(max-width: 800px){
+@media(max-width: 880px){
     .profile-title{
         font-size: 35px;
+    }
+    .profile_img{
+        width: 50%;
     }
     .history-container{
         margin: 1%;
@@ -140,22 +141,22 @@ $black: #606060;
         width: 100%;
         .skill-item{
             h1{
-                font-size: 17px;
+                font-size: 24px;
             }
             p{
-                font-size: 11px;
+                font-size: 15px;
             }
         }
     }
     .work-container{
         width: 100%;
         .work-item{
+            height: 100%;            
             width: 80%;
             margin: 0 auto;
             margin-bottom: 3%;
         }
     }
     
-    
-    
+
 }

@@ -9,7 +9,7 @@ export const Profile = () => {
     return(
         <div className="profile">
             <h1 className='profile-title'>ぴよぱんまんのプロフィール</h1>
-            <img src={hiyoko} />
+            <img className='profile_img' src={hiyoko} />
             <Histories />
             <Skills />
             <Works />
