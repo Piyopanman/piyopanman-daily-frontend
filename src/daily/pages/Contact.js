@@ -18,7 +18,7 @@ export const Contact = () =>{
                 <h2>お名前（必須）</h2>
                 <input type="text" name="name" required={true} ref={register} placeholder="ぴよぱんまん"/><br></br>
                 <h2>メールアドレス</h2>
-                <input type="text" name="email" ref={register} placeholder="hoge@gmail.com"/> <br></br>
+                <input type="email" name="email" ref={register} placeholder="hoge@gmail.com"/> <br></br>
                 <h2>Twitterアカウント（必須）</h2>
                 <input type="text" name="twitter" required={true} ref={register} placeholder="@hiyoko_coder"/><br></br>
                 <h2>推し（言語、アーティストなど分野問わず）</h2>
