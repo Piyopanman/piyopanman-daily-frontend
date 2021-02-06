@@ -48,8 +48,8 @@ export const Works = () => {
             title:'日報',
             img: nippo,
             text:'個人開発。1日にやったことをまとめておきたくて作りました。カテゴリ別に見られるところが気に入っています。',
-            techs:'React.js, Django',
-            link: 'https://piyopanman.piyopanman.vercel.app/',
+            techs:'React, Django',
+            link: 'https://piyopanman.com/daily',
         },
 
     ]

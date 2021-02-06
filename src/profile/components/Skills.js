@@ -13,12 +13,12 @@ export const Skills = () => {
             text:'ここのバックエンドに使用',
         },
         {
-            name:'React.js',
+            name:'React',
             text:'ここのフロントエンドに使用',
         },
         {
             name:'JavaScript',
-            text:'ハッカソンでちょっと触った',
+            text:'ハッカソンと短期インターンで使用',
         },
     ]
 
