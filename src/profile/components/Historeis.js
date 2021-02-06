@@ -32,6 +32,10 @@ export const Histories = () => {
             date: '2020年11月',
             event: 'ICPC 参加',
         },
+        {
+            date: '2021年2月',
+            event: 'ナビタイムジャパン インターン参加'
+        }
     ]
 
     return(
