@@ -92,10 +92,12 @@ $black: #606060;
             display: block;
             font-size: 25px;
             color: $orange;
+            text-decoration: underline;
             border-radius: 20px;
             margin-bottom: 3%;
             &:hover{
                transition: 0.5s;
+               text-decoration: none;
                background-color: $orange;
                color: white;
             }

@@ -20,6 +20,10 @@ export const Skills = () => {
             name:'JavaScript',
             text:'ハッカソンと短期インターンで使用',
         },
+        {
+            name:'Go',
+            text:'勉強中'
+        }
     ]
 
 
