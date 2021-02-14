@@ -13,7 +13,7 @@ export const Profile = () => {
             <Histories />
             <Skills />
             <Works />
-            <p id="update-date">最終更新日：2021年2月6日</p>
+            <p id="update-date">最終更新日：2021年2月14日</p>
         </div>
     )
 }
